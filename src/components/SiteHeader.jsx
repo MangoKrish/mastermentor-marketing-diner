@@ -30,8 +30,11 @@ export function SiteHeader({ currentPage, mobileMenuOpen, onNavigate, onToggleMo
 
         <div className="nav-actions">
           <div className="desktop-cta">
-            <a href="https://mastermentor.academy/portal" className="btn-secondary btn-nav">
-              Access Portal
+            <a href="https://mastermentor.academy/portal" className="nav-signin">
+              Sign in
+            </a>
+            <a href="https://mastermentor.academy/portal" className="btn-primary btn-nav">
+              Start free
             </a>
           </div>
 

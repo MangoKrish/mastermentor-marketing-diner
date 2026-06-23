@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import { AnnouncementBar } from './components/AnnouncementBar.jsx';
 import { MobileMenu } from './components/MobileMenu.jsx';
 import { SiteFooter } from './components/SiteFooter.jsx';
 import { SiteHeader } from './components/SiteHeader.jsx';
@@ -57,6 +58,8 @@ export default function App() {
 
   return (
     <>
+      <AnnouncementBar />
+
       <SiteHeader
         currentPage={currentPage}
         mobileMenuOpen={mobileMenuOpen}
