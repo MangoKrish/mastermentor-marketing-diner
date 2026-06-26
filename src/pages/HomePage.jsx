@@ -1,6 +1,10 @@
 import { Icons } from '../components/Icons.jsx';
 import { Reveal } from '../components/Reveal.jsx';
 import { Marquee } from '../components/Marquee.jsx';
+import { CountUp } from '../components/CountUp.jsx';
+import { PairingShowcase } from '../components/PairingShowcase.jsx';
+import { MentorSpotlight } from '../components/MentorSpotlight.jsx';
+import { StickyCTA } from '../components/StickyCTA.jsx';
 import {
   HeroDashboard,
   ScholarshipBoard,
@@ -9,10 +13,10 @@ import {
 } from '../components/ProductMocks.jsx';
 
 const STATS = [
-  { value: '2,400+', label: 'students guided' },
-  { value: '$18M', label: 'scholarships tracked' },
-  { value: '4.9★', label: 'average rating' },
-  { value: '12 hrs', label: 'saved every week' }
+  { target: 2400, suffix: '+', label: 'students guided' },
+  { prefix: '$', target: 18, suffix: 'M', label: 'scholarships tracked' },
+  { target: 4.9, decimals: 1, suffix: '★', label: 'average rating' },
+  { target: 12, suffix: ' hrs', label: 'saved every week' }
 ];
 
 const STEPS = [
@@ -110,11 +114,19 @@ export function HomePage() {
         <div className="container stat-pills">
           {STATS.map((s) => (
             <div className="stat-pill" key={s.label}>
-              <span className="stat-pill-value">{s.value}</span>
+              <CountUp
+                className="stat-pill-value"
+                target={s.target}
+                prefix={s.prefix}
+                suffix={s.suffix}
+                decimals={s.decimals}
+              />
               <span className="stat-pill-label">{s.label}</span>
             </div>
           ))}
         </div>
+
+        <div id="hero-sentinel" aria-hidden="true" />
       </section>
 
       <Marquee />
@@ -203,6 +215,9 @@ export function HomePage() {
         />
       </section>
 
+      {/* PAIRING — flagship feature */}
+      <PairingShowcase />
+
       {/* HOW IT WORKS */}
       <section id="how" className="how-section">
         <div className="container">
@@ -222,6 +237,9 @@ export function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* MENTOR SPOTLIGHT */}
+      <MentorSpotlight />
 
       {/* TESTIMONIALS */}
       <section className="container section testimonial-section">
@@ -271,6 +289,8 @@ export function HomePage() {
           </Reveal>
         </div>
       </section>
+
+      <StickyCTA />
     </div>
   );
 }

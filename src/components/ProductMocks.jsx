@@ -1,4 +1,5 @@
 import { Icons } from './Icons.jsx';
+import { useTilt } from '../hooks/useTilt.js';
 
 function WindowChrome({ title }) {
   return (
@@ -17,10 +18,11 @@ function Avatar({ initials, tone = 'amber' }) {
 
 /* ---- Hero workspace ---- */
 export function HeroDashboard() {
+  const tiltRef = useTilt(7);
   return (
-    <div className="hero-visual-stage" aria-hidden="true">
+    <div className="hero-visual-stage" aria-hidden="true" ref={tiltRef}>
       <div className="hero-glow" />
-      <div className="mock-card hero-mock ambient-float">
+      <div className="mock-card hero-mock">
         <WindowChrome title="Master Mentor · Workspace" />
         <div className="hero-mock-body">
           <div className="mock-row mock-greeting">
