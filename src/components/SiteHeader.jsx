@@ -34,7 +34,7 @@ export function SiteHeader({ currentPage, mobileMenuOpen, onNavigate, onToggleMo
               Sign in
             </a>
             <a href="https://mastermentor.academy/portal" className="btn-primary btn-nav">
-              Start free
+              Get started
             </a>
           </div>
 

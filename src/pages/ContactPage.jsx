@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: 'What is required to access the platform?',
-    a: 'Access to the core portal begins simply by creating an account. Any pricing or premium tiers are handled transparently inside the platform based on the level of specialized review required.'
+    a: 'Access to the core portal begins simply by creating an account. From there, your structured workspace — scholarships, document reviews, resources, and mentor matching — is ready for you to set up.'
   }
 ];
 

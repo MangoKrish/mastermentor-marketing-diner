@@ -6,10 +6,10 @@ export function SiteFooter({ onNavigate }) {
       <div className="container footer-cta">
         <div>
           <h3 className="footer-cta-title">Bring order to your application season.</h3>
-          <p className="footer-cta-copy">It&apos;s free to start — your future self will thank you.</p>
+          <p className="footer-cta-copy">Your future self will thank you.</p>
         </div>
         <a href="https://mastermentor.academy/portal" className="btn-cream btn-large">
-          Start free <span className="arrow-icon"><Icons.ArrowRight /></span>
+          Get started <span className="arrow-icon"><Icons.ArrowRight /></span>
         </a>
       </div>
 

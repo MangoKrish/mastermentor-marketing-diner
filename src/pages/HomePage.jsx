@@ -84,7 +84,7 @@ export function HomePage() {
             </p>
             <div className="hero-actions">
               <a href="https://mastermentor.academy/portal" className="btn-primary btn-large">
-                Start free <span className="arrow-icon"><Icons.ArrowRight /></span>
+                Get started <span className="arrow-icon"><Icons.ArrowRight /></span>
               </a>
               <a href="#how" className="btn-ghost btn-large">
                 See how it works
@@ -281,11 +281,11 @@ export function HomePage() {
             </p>
             <div className="hero-actions cta-band-actions">
               <a href="https://mastermentor.academy/portal" className="btn-cream btn-large">
-                Start free <span className="arrow-icon"><Icons.ArrowRight /></span>
+                Get started <span className="arrow-icon"><Icons.ArrowRight /></span>
               </a>
               <a href="/contact" className="btn-ghost-light btn-large">Talk to us</a>
             </div>
-            <p className="cta-reassure">No credit card · Free to start · Cancel anytime</p>
+            <p className="cta-reassure">Built by students, for students · Join the Fall 2026 cohort</p>
           </Reveal>
         </div>
       </section>

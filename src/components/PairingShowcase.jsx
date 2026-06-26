@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Icons } from './Icons.jsx';
 import { Reveal } from './Reveal.jsx';
-import { CountUp } from './CountUp.jsx';
 
 const REASONS = [
   'Same province — shared curriculum & admissions nuance',
@@ -9,7 +8,7 @@ const REASONS = [
   'Built around your goals and target outcomes'
 ];
 
-function CompatRing({ value = 92 }) {
+function CompatRing({ value = 100 }) {
   const ref = useRef(null);
   const [on, setOn] = useState(false);
 
@@ -55,8 +54,8 @@ function CompatRing({ value = 92 }) {
         />
       </svg>
       <div className="compat-center">
-        <CountUp target={value} suffix="%" className="compat-num" />
-        <span className="compat-label">match</span>
+        <span className="compat-check"><Icons.Check /></span>
+        <span className="compat-label">Top match</span>
       </div>
     </div>
   );
@@ -72,9 +71,10 @@ export function PairingShowcase() {
             Matched to the right mentor — <em>with the math to prove it.</em>
           </h2>
           <p className="body-lg mt-4">
-            Every mentor is scored against your profile across the things that actually move the
-            needle — your stream and goals, intended program, and province. Your top matches
-            aren&apos;t guesses; they&apos;re ranked, transparent, and yours to choose from.
+            Behind the scenes, Master Mentor weighs every mentor against your profile across the
+            things that actually move the needle — your stream and goals, intended program, and
+            province. You don&apos;t see the math; you just see your strongest matches, explained in
+            plain language and yours to choose from.
           </p>
           <ul className="comp-list feature-list pairing-reasons">
             {REASONS.map((reason) => (
@@ -99,7 +99,7 @@ export function PairingShowcase() {
               </div>
               <span className="status-pill status-pill-green"><span className="status-dot" /> Open</span>
             </div>
-            <CompatRing value={92} />
+            <CompatRing />
             <div className="compat-reasons">
               <span className="chip chip-green">Province match</span>
               <span className="chip chip-amber">CS program</span>

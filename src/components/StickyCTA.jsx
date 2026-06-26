@@ -27,11 +27,11 @@ export function StickyCTA() {
     <div className={`sticky-cta ${show ? 'is-visible' : ''}`} role="complementary">
       <div className="sticky-cta-text">
         <Icons.Sparkle />
-        <span>Your calmer application season starts free.</span>
+        <span>Your calmer application season starts here.</span>
       </div>
       <div className="sticky-cta-actions">
         <a href="https://mastermentor.academy/portal" className="btn-primary btn-nav">
-          Start free
+          Get started
         </a>
         <button
           type="button"

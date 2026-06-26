@@ -1066,12 +1066,15 @@ h1, h2, h3, h4, h5 {
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.03em;
 }
+.compat-check { display: flex; color: var(--accent-green); margin-bottom: 2px; }
+.compat-check svg { width: 46px; height: 46px; stroke-width: 2.5; }
 .compat-label {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.72rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: var(--text-muted);
+  letter-spacing: 0.14em;
+  color: var(--text-heading);
 }
 .compat-reasons { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
 

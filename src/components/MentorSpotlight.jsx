@@ -3,27 +3,27 @@ import { Reveal } from './Reveal.jsx';
 
 const MENTORS = [
   {
-    initials: 'DR', tone: 'green', name: 'Dr. Reyes', match: 96,
+    initials: 'DR', tone: 'green', name: 'Dr. Reyes', fit: 'Top match',
     school: 'Waterloo', program: 'Computer Science',
     tags: ['Scholarship winner', 'Co-op', 'Ontario']
   },
   {
-    initials: 'AP', tone: 'amber', name: 'Aanya P.', match: 93,
+    initials: 'AP', tone: 'amber', name: 'Aanya P.', fit: 'Strong fit',
     school: 'U of T', program: 'Engineering Science',
     tags: ['First-gen', 'Research', 'Ontario']
   },
   {
-    initials: 'ML', tone: 'clay', name: 'Marcus L.', match: 90,
+    initials: 'ML', tone: 'clay', name: 'Marcus L.', fit: 'Great fit',
     school: 'Georgia Tech', program: 'Computer Science',
     tags: ['International', 'Internships']
   },
   {
-    initials: 'SR', tone: 'green', name: 'Sofia R.', match: 88,
+    initials: 'SR', tone: 'green', name: 'Sofia R.', fit: 'Strong fit',
     school: 'McGill', program: 'Biology · Pre-med',
     tags: ['MCAT', 'Volunteering', 'Quebec']
   },
   {
-    initials: 'JK', tone: 'amber', name: 'Jordan K.', match: 85,
+    initials: 'JK', tone: 'amber', name: 'Jordan K.', fit: 'Good fit',
     school: 'UBC', program: 'Commerce',
     tags: ['Case comps', 'Leadership', 'BC']
   }
@@ -50,7 +50,7 @@ export function MentorSpotlight() {
             <article className="spotlight-card" key={m.name}>
               <div className="spotlight-card-top">
                 <span className={`avatar avatar-${m.tone} spotlight-avatar`}>{m.initials}</span>
-                <span className="match-badge match-green">{m.match}% match</span>
+                <span className="match-badge match-green">{m.fit}</span>
               </div>
               <h3 className="spotlight-name">{m.name}</h3>
               <p className="spotlight-meta">
